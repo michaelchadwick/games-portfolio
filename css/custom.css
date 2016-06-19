@@ -6,9 +6,19 @@ body {
 a {
   color: #444;
 }
+h1 {
+  margin-bottom: 1.4rem;
+}
+h5 {
+  margin-bottom: 1.1rem;
+}
 hr {
   border: 1px solid #777;
 }
 img {
   margin: 0;
+}
+.button {
+  background: rgba(243, 189, 126, 0.5);
+  border: 1px solid #555;
 }
