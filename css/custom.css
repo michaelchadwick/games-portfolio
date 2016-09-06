@@ -22,3 +22,7 @@ img {
   background: rgba(243, 189, 126, 0.5);
   border: 1px solid #555;
 }
+.button:hover {
+  background: rgba(255, 189, 126, 1.0);
+  border: 1px solid #222;
+}
