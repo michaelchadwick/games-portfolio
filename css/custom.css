@@ -2,19 +2,19 @@ body {
   background-color: #f6d0a4;
   color: #222;
   font-size: 2em;
-	padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 a {
-	border-bottom: 3px solid #be7bff;
+  border-bottom: 3px solid #be7bff;
   color: #444;
-	text-decoration: none;
+  text-decoration: none;
 }
 a:hover {
-	color: #9251d1;
-	cursor: pointer;
+  color: #9251d1;
+  cursor: pointer;
 }
 h1,h2,h3,h4,h5,h6 {
-	margin-bottom:1rem;
+  margin-bottom:1rem;
 }
 h1 { font-size: 2.5em; }
 h2 { font-size: 2em; }
@@ -31,7 +31,7 @@ img {
 .button {
   background: rgba(243, 159, 126, 0.75);
   border: 2px solid #555;
-	font-size: 1.25em;
+  font-size: 1.25em;
 }
 .button:hover {
   background: rgba(255, 189, 126, 1.0);
@@ -39,10 +39,10 @@ img {
 }
 
 #game-list {
-	background: #f3c897;
-	margin: 20px auto;
-	padding: 20px;
+  background: #f3c897;
+  margin: 20px auto;
+  padding: 20px;
 }
 .row {
-	padding-bottom: 20px;
+  padding-bottom: 20px;
 }
