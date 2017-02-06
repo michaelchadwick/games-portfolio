@@ -5,44 +5,43 @@ body {
 	line-height: 1.5em;
   padding-bottom: 20px;
 }
+.container {
+  width: 100%;
+}
+header {
+  margin-top: 2%;
+}
 a {
-  border-bottom: 3px solid #be7bff;
+  border-bottom: 2px solid #A5733A;
   color: #444;
   text-decoration: none;
 }
 a:hover {
-  color: #9251d1;
+  color: #A5733A;
   cursor: pointer;
 }
 h1,h2,h3,h4,h5,h6 {
+  line-height: 1em;
   margin: 0;
 }
-h1 { font-size: 2.5em; line-height: 1em; }
-h2 { font-size: 2em; }
-h3 { font-size: 1.3em; }
-h4 { font-size: 1.1em; }
-h5 { font-size: 1.0em; }
-h6 { font-size: 0.7em; }
-hr { border: 1px solid #777; }
-img { margin: 0; }
-
-a.button {
-  background: rgba(243, 159, 126, 0.75);
-  border: 2px solid #555;
-	display: block;
-  font-size: 1.1em;
-	text-align: center;
-	margin: 5px 0;
-	padding: 0 5px;
+h1 {
+  font-size: 1.75em;
+  line-height: 1.25em;
+  padding: 0;
 }
-a.button:hover {
-  background: rgba(255, 189, 126, 1.0);
-  border-bottom: 3px solid #222;
+h2 {
+  font-size: 1.55em;
+  padding: 0;
 }
-a.button.mini {
-	float: left;
-	margin: 0;
-	width: 33%;
+h3 {
+  font-size: 1.4em;
+  line-height: 1em;
+}
+h4 {
+  font-size: 1.2em;
+}
+footer {
+  padding: 15px;
 }
 
 #game-list {
@@ -55,31 +54,76 @@ a.button.mini {
 }
 
 .game {
-	width: 400px;
 	min-height: 450px;
-	padding: 15px;
+	padding: 15px 5px;
+  margin: 0;
 }
 .game h3 {
 	text-transform: uppercase;
 }
 .game img {
-	margin-top: 10px;
+  display: block;
+	margin: 10px 0 0;
+  padding: 0;
 	max-width: 400px;
 	max-height: 400px;
 	width: 100%;
 }
 .game p {
-	background: #f3c877;
+	background: #FFE7CC;
 	display: block;
-	font-size: 0.8em;
-	line-height: 1em;
-	height: 50px;
-	margin: 0 0 5px;
-	padding: 5px;
+	font-size: 1em;
+	line-height: 1.25em;
+	margin: 0;
+	padding: 10px;
+  border-left: 3px solid #CEA06A;
+  border-right: 3px solid #CEA06A;
+  border-bottom: 3px solid #CEA06A;
 }
-.game .downloads {
-	position: relative;
-	top: 5px;
+a.button {
+  background: #CEA06A;
+  border: 2px solid #555;
+	display: block;
+  font-size: 1.0em;
+	text-align: center;
+	margin: 5px 0;
+	padding: 0 5px;
+}
+a.button:hover {
+  background: #A5733A;
+  border-bottom: 3px solid #222;
+  color: #eee;
+}
+a.button.mini {
+	
+}
+/* desktop */
+@media (min-width: 992px) {
+  a.button.mini {
+    float: left;
+    width: 33%;
+  }
+  .game {
+    max-width: 400px;
+  }
+}
+/* ipad or bigger */
+@media (min-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  .game p {
+    min-height: 80px;
+  }
+  h1 { font-size: 2.5em; line-height: 1em; }
+  h2 { font-size: 2em; }
+  h3 { font-size: 1.3em; }
+  h4 { font-size: 1.1em; }
+  h5 { font-size: 1.0em; }
+  h6 { font-size: 0.7em; }
+  hr { border: 1px solid #777; }
+  img { margin: 0; }
+  header { margin-top: 5%; }
 }
 #axeracer {  }
 #gemwarrior {  }
