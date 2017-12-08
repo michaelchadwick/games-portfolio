@@ -1,7 +1,7 @@
 body {
   background-color: #f6d0a4;
   color: #222;
-  font-size: 2em;
+  font-size: 20px;
 	line-height: 1.5em;
   padding-bottom: 20px;
 }
@@ -10,6 +10,7 @@ body {
 }
 header {
   margin-top: 2%;
+  padding: 0 15px;
 }
 a {
   border-bottom: 2px solid #A5733A;
@@ -20,25 +21,27 @@ a:hover {
   color: #A5733A;
   cursor: pointer;
 }
-h1,h2,h3,h4,h5,h6 {
-  line-height: 1em;
-  margin: 0;
-}
 h1 {
   font-size: 1.75em;
   line-height: 1.25em;
+  margin: 0;
   padding: 0;
 }
 h2 {
   font-size: 1.55em;
+  line-height: 1em;
+  margin: 0;
   padding: 0;
 }
 h3 {
   font-size: 1.4em;
   line-height: 1em;
+  margin: 0;
 }
 h4 {
   font-size: 1.2em;
+  line-height: 1em;
+  margin: 0;
 }
 footer {
   padding: 15px;
@@ -54,9 +57,9 @@ footer {
 }
 
 .game {
+  margin: 0;
 	min-height: 450px;
 	padding: 15px 5px;
-  margin: 0;
 }
 .game h3 {
 	text-transform: uppercase;
@@ -64,71 +67,79 @@ footer {
 .game img {
   display: block;
 	margin: 10px 0 0;
-  padding: 0;
-	max-width: 400px;
-	max-height: 400px;
+	padding: 0;
 	width: 100%;
 }
 .game p {
 	background: #FFE7CC;
+  border-bottom: 3px solid #CEA06A;
+  border-left: 3px solid #CEA06A;
+  border-right: 3px solid #CEA06A;
 	display: block;
 	font-size: 1em;
 	line-height: 1.25em;
 	margin: 0;
 	padding: 10px;
-  border-left: 3px solid #CEA06A;
-  border-right: 3px solid #CEA06A;
-  border-bottom: 3px solid #CEA06A;
 }
 a.button {
   background: #CEA06A;
   border: 2px solid #555;
 	display: block;
-  font-size: 1.0em;
-	text-align: center;
+  font-size: 1em;
 	margin: 5px 0;
 	padding: 0 5px;
+	text-align: center;
 }
 a.button:hover {
   background: #A5733A;
   border-bottom: 3px solid #222;
   color: #eee;
 }
-a.button.mini {
-	
+.mini {
+  float: left;
+  width: 33%;
 }
-/* desktop */
-@media (min-width: 992px) {
-  a.button.mini {
-    float: left;
-    width: 33%;
+
+/* skeleton mobile breakpoint */
+@media (min-width: 550px) {
+  .game p {
+    font-size: .8em;
+    min-height: 100px;
   }
-  .game {
-    max-width: 400px;
+  a.button {
+    font-size: .8em;
   }
 }
-/* ipad or bigger */
+
+/* tablet */
 @media (min-width: 768px) {
   .container {
-    width: 90%;
+    width: 95%;
   }
   .game p {
-    min-height: 80px;
+    font-size: 1em;
+    min-height: 120px;
   }
   h1 { font-size: 2.5em; line-height: 1em; }
   h2 { font-size: 2em; }
   h3 { font-size: 1.3em; }
   h4 { font-size: 1.1em; }
-  h5 { font-size: 1.0em; }
-  h6 { font-size: 0.7em; }
+  h5 { font-size: 1em; }
+  h6 { font-size: .7em; }
   hr { border: 1px solid #777; }
   img { margin: 0; }
   header { margin-top: 5%; }
 }
-#axeracer {  }
-#gemwarrior {  }
-#guess-the-number {  }
-#planets {  }
-#pong-gm {  }
-#pong-haxe {  }
-#simon-says {  }
+
+/* desktop */
+@media (min-width: 992px) {
+  .game {
+    max-width: 400px;
+  }
+  .game p {
+    font-size: 1.2em;
+  }
+  a.button {
+    font-size: 1em;
+  }
+}
